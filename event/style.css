@@ -1,0 +1,1112 @@
+
+#top{
+    height: auto;
+  }
+  #topBar{
+    width: 89%;
+    margin: auto;
+  }
+  
+  .call{
+    display: flex;
+    padding-top: 15px;
+  
+  }
+  .icons{
+    display: flex;
+    float: right;
+  }
+  .fb{
+    padding: 10px;
+    font-size: larger;
+    border-left: 1px solid rgb(234 227 227);
+    width: 60px;
+    text-align: center;
+    margin: 0;
+  }
+  .menu_bar{
+    /* background-color: red; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .menu_bar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo p{
+    margin-top: 6%;
+  }
+  .menu_bar img{
+    height: 50px;
+    width: 120px;
+  }
+  .menu_bar ul{
+    list-style-type: none;
+    display: flex;
+    /* background-color: pink; */
+  }
+  .menu_bar ul li{
+    padding: 10px ;
+    position: relative;
+  }
+  .menu_bar ul li a{
+    color: black;
+    text-decoration: none;
+    /* font-size: 20px; */
+    text-transform: uppercase ;
+  }
+  .menu_bar ul li a:hover{
+    color: #fa6f1c;
+  }
+  .menu_bar ul button{
+    height: 50px;
+    width: 110px;
+    border: 2px solid orangered;
+    color: #fa6f1c;
+    text-transform: uppercase;
+  }
+  .menu_bar ul button:hover{
+    color: white;
+    background-color: #fa6f1c;
+  }
+  .dropdown_menu{
+    display: none;
+  }
+  .menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+  }
+  .dropdown_menu ul {
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+  }
+  .dropdown_menu ul li a{
+    color: white;
+  }
+  /* navbar... */
+  .container-fluid img {
+      height: 70px;
+      width: 120px;
+      /* margin-left: 3em; */
+    }
+    
+    #nav-li :hover {
+      color: orangered;
+    }
+    
+    #btn {
+      color: orangered;
+      font-size: 18px;
+      border: 2px solid orangered;
+      /* margin-right: 5em;  */
+    }
+    
+    #btn:hover {
+      color: white;
+      background-color: orangered;
+    }
+    
+    /* Responsive Styles */
+  @media (max-width: 992px) {
+      /* For medium screens and below */
+      .navbar-nav {
+        text-align: center;
+        width: 100%;
+      }
+      
+      .navbar-nav .nav-item {
+        margin-bottom: 10px;
+      }
+      
+      #btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      /* For small screens */
+      .navbar-logo {
+        height: 50px;
+        width: 100px;
+      }
+      
+      .navbar-nav .nav-item {
+        margin-bottom: 5px;
+      }
+      
+      #btn {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    /* navbar.. */
+    
+    /* images.. */
+    .images{
+      background-image: url(../asset/main-event.jpg);
+      height: 180px;
+      width: 100%;
+      /* background-repeat: no-repeat; */
+      background-size: cover;
+      background-position: cover;
+    }
+  
+    .images h3 {
+      padding-top: 3%;
+      padding-left: 7%;
+  }
+  
+  .images button {
+      margin-left: 7%;
+      border: none;
+      height: 40px;
+      width: 190px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: orangered;
+  }
+  
+  .images button:hover {
+      color: orangered;
+      text-decoration: underline;
+  }
+  
+  @media (max-width: 992px) {
+    .image {
+      height: 180px;
+      background-position: center;
+    }
+  
+    .image h4 {
+      padding-left: 4%;
+      font-size: 1.3rem;
+    }
+  
+    .image button {
+      width: 160px;
+      font-size: 0.9rem;
+      margin-left: 4%;
+    }
+  }
+  
+    /* images*/
+  
+    /* carrdss... */
+    .cols-1{
+      height: 500px;
+      width: 90%;
+      /* background-color: red; */
+     margin-left: 5%;
+     display: flex;
+     margin-top: 6%;
+     gap: 20px;
+    }
+    .left{
+      width: 32%;
+      height: 500px;
+    }
+    .left img{
+      height: 230px;
+      width: 100%;
+      background-position: cover;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .left h5{
+      padding-top: 5%;
+    }
+    .left p{
+      color: gray;
+      /* padding-left: 2%; */
+    }
+    .left button{
+      height: 35px;
+      width: 110px;
+      color: orangered;
+      border: 2px solid orangered;
+    }
+    .left button:hover{
+      color: white;
+      background-color: orangered;
+    }
+    .left i {
+      padding-left:3%;
+      padding-top: 2%;
+      /* margin-left: 1%; */
+     height: 30px;
+     width: 40px;
+  }
+  .left #facebook{
+    background-color: blue;
+    color: white;
+  }
+    #facebok {
+      height: 50px;
+      width: 150px;
+      background-color: blue;
+      border: 2px solid blue;
+  }
+  #facebook:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+  }
+    .mid{
+      /* background-color: yellow; */
+      width: 32%;
+      height: 500px;
+    }
+   
+    .mid img{
+      height: 230px;
+      width: 100%;
+      background-position: cover;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .mid h5{
+      padding-top: 5%;
+    }
+    .mid p{
+      color: gray;
+      /* padding-left: 2%; */
+    }
+    .mid button{
+      height: 35px;
+      width: 110px;
+      color: orangered;
+      border: 2px solid orangered;
+    }
+    .mid button:hover{
+      color: white;
+      background-color: orangered;
+    }
+    .mid i {
+      padding-left:3%;
+      padding-top: 2%;
+      /* margin-left: 1%; */
+     height: 30px;
+     width: 40px;
+  }
+  .mid #facebook{
+    background-color: blue;
+    color: white;
+  }
+    #facebok {
+      height: 50px;
+      width: 150px;
+      background-color: blue;
+      border: 2px solid blue;
+  }
+  #facebook:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+  }
+    .right{
+      /* background-color: green; */
+      width: 32%;
+      height: 500px;
+    }
+  
+    .right img{
+      height: 230px;
+      width: 100%;
+      background-position: cover;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .right h5{
+      padding-top: 5%;
+    }
+    .right p{
+      color: gray;
+      /* padding-left: 2%; */
+    }
+    .right button{
+      height: 35px;
+      width: 110px;
+      color: orangered;
+      border: 2px solid orangered;
+    }
+    .right button:hover{
+      color: white;
+      background-color: orangered;
+    }
+    .right i {
+      padding-left:3%;
+      padding-top: 2%;
+      /* margin-left: 1%; */
+     height: 30px;
+     width: 40px;
+  }
+  .right #facebook{
+    background-color: blue;
+    color: white;
+  }
+    #facebok {
+      height: 50px;
+      width: 150px;
+      background-color: blue;
+      border: 2px solid blue;
+  }
+  #facebook:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+  }
+  
+  @media (max-width: 800px) {
+    .cols-1 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+        padding: 10px;
+        height: auto; 
+    }
+  
+    .cols-1 > div {
+        width: 100%; 
+        height: auto;
+      }
+  
+    img {
+        width: 100%;
+        height: auto; 
+    }
+  
+    h5 {
+        font-size: 1.2rem; 
+        margin-top: 10px;
+    }
+  
+    p {
+        font-size: 0.9rem; 
+        line-height: 1.4;
+    }
+  
+    button {
+        font-size: 1rem;
+    }
+  
+    i#facebook {
+        font-size: 1.5rem;
+    }
+  }
+  
+    /* carrdss... */
+  
+    /* cardss2... */
+    .card2{
+      height: 500px;
+      width: 90%;
+      /* background-color: blue; */
+      margin-left: 5%;
+      display: flex;
+      margin-top: 2%;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  .left2{
+    height: 500px;
+    width: 32%;
+    /* background-color: yellow; */
+  }
+  
+  .left2 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .left2 h5{
+    padding-top: 5%;
+  }
+  .left2 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .left2 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .left2 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .left2 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .left2 #facebook{
+  background-color: blue;
+  color: white;
+  }
+  #facebok {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  
+  .mid2{
+    height: 500px;
+    width: 32%;
+    /* background-color:green; */
+  }
+  .mid2 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .mid2 h5{
+    padding-top: 5%;
+  }
+  .mid2 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .mid2 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .mid2 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .mid2 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .mid2 #facebook{
+  background-color: blue;
+  color: white;
+  }
+  #facebok {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  
+  .right2{
+    height: 500px;
+    width: 32%;
+    /* background-color: purple; */
+  }
+  
+  .right2 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .right2 h5{
+    padding-top: 5%;
+  }
+  .right2 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .right2 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .right2 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .right2 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .right2 #facebook{
+  background-color: blue;
+  color: white;
+  }
+  #facebok {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  
+  @media (max-width: 800px) {
+    .card2 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 10px;
+        height: auto; 
+    }
+  
+    .card2 > div {
+        width: 100%;
+    }
+  
+    img {
+        width: 100%;
+        height: auto; 
+        margin-bottom: 15px;
+    }
+  
+    h5 {
+        font-size: 1.2rem; 
+        margin-top: 10px;
+    }
+  
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4; 
+    }
+  
+    button {
+        padding: 10px 20px; 
+        font-size: 1rem;
+        display: block;
+        margin: 10px auto;
+    }
+  
+    i#facebook {
+        font-size: 1.5rem; 
+        margin-top: 10px;
+    }
+  }
+  
+  
+  .card3{
+    height: 500px;
+    width: 90%;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 2%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .left3{
+    height: 500px;
+    width: 32%;
+    /* background-color: olive; */
+  }
+  
+  .left3 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .left3 h5{
+    padding-top: 5%;
+  }
+  .left3 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .left3 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .left3 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .left3 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .left3 #facebook3{
+  background-color: blue;
+  color: white;
+  }
+  #facebok3 {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook3:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  
+  .mid3{
+    height: 500px;
+    width: 32%;
+    /* background-color:blue; */
+  }
+  
+  .mid3 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .mid3 h5{
+    padding-top: 5%;
+  }
+  .mid3 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .mid3 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .mid3 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .mid3 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .mid3 #facebook3{
+  background-color: blue;
+  color: white;
+  }
+  #facebok3 {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook3:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  .right3{
+    height: 500px;
+    width: 32%;
+    /* background-color:lawngreen; */
+  }
+  
+  .right3 img{
+    height: 230px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .right3 h5{
+    padding-top: 5%;
+  }
+  .right3 p{
+    color: gray;
+    /* padding-left: 2%; */
+  }
+  .right3 button{
+    height: 35px;
+    width: 110px;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+  .right3 button:hover{
+    color: white;
+    background-color: orangered;
+  }
+  .right3 i {
+    padding-left:3%;
+    padding-top: 2%;
+    /* margin-left: 1%; */
+   height: 30px;
+   width: 40px;
+  }
+  .right3 #facebook3{
+  background-color: blue;
+  color: white;
+  }
+  #facebok3 {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid blue;
+  }
+  #facebook:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  }
+  
+  @media (max-width: 800px) {
+    .card3 {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 10px;
+        height: auto; 
+    }
+  
+    .card3 > div {
+        width: 100%;
+    }
+  
+    img {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 15px; 
+    }
+  
+    h5 {
+        font-size: 1.2rem; 
+        margin-top: 10px;
+    }
+  
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4; 
+    }
+  
+    button {
+        padding: 10px 20px; 
+        font-size: 1rem;
+        display: block;
+        margin: 10px auto; 
+    }
+  
+    i#facebook3 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+  }
+  
+     /* cardss2... */
+  
+     /* last.. */
+     .foots{
+      height: 250px;
+      width: 100%;
+      /* background-color: red; */
+     }
+  
+     .black-cont {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .left-cont {
+      height: 250px;
+      width: 50%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .right-cont {
+      background: black;
+      height: 250px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .right-cont button {
+      color: orangered;
+      border: 2px solid orangered;
+      font-size: 17px;
+      font-weight: 500;
+      margin: 12px;
+    }
+    
+    .right-cont button:hover {
+      color: white;
+      background-color: orangered;
+    }
+    
+    .round {
+      color: white;
+      border-radius: 50%;
+      background-color: rgb(49, 48, 48);
+      height: 40px;
+      width: 50px;
+      text-align: center;
+      padding-top: 6px;
+      margin: 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .black-cont {
+        height: auto;
+        /* Make container height flexible */
+        flex-direction: column;
+        /* Stack left and right content vertically */
+        align-items: center;
+        padding: 20px 0;
+      }
+    
+      .left-cont,
+      .right-cont {
+        width: 100%;
+        /* Full width on smaller screens */
+        height: auto;
+        /* Adjust height to fit content */
+      }
+    
+      .right-cont {
+        flex-direction: column;
+        /* Stack buttons vertically */
+      }
+    
+      .right-cont button {
+        width: 80%;
+        /* Reduce button width for better fit */
+        font-size: 16px;
+        /* Slightly smaller font size */
+      }
+    
+      .round {
+        margin: 10px 0;
+        /* Add margin between the buttons and "OR" */
+      }
+    }
+     /* last.. */
+  
+     .footing{
+      height: 370px;
+      width: 100%;
+      /* background-color: blue; */
+     }
+  
+     footer{
+      height: 400px;
+      width: 100%;
+      /* background-color: red; */
+    }
+    
+    .main-col {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: auto;
+      background-color: rgba(19, 19, 20, 0.863);
+     
+      padding-top: 7%;
+      color: white;
+      flex-wrap: wrap;
+      height: 450px;
+    }
+    .main-col h3{
+      position: relative;
+    }
+    .main-col h3::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      background-color: orangered;
+      height: 2px;
+      width: 50px;
+    }
+    
+    .col1 {
+      height: 400px;
+      width: 400px;
+      padding-left: 15px;
+    }
+    
+    
+    
+    .col1 p {
+      color: gray;
+      padding-top: 20px;
+      margin-top: 9%;
+    }
+    
+    .col2 {
+      height: 400px;
+      width: 300px;
+      line-height: 40px;
+    }
+    
+    .col2 li {
+      list-style: none;
+      color: gray;
+      margin-top: 10px;
+      margin-top: 6%;
+    }
+    
+    .col2 li:hover {
+      color: white;
+    }
+    
+    .col3 {
+      height: 400px;
+      width: 300px;
+    }
+    
+    .col3 p {
+      color: gray;
+      padding-top: 20px;
+      margin-top: 10%;
+    }
+    
+    .col3 input {
+      margin-top: 18px;
+      width: 190px;
+    }
+    
+    .col3 button {
+      color: white;
+      background-color: orangered;
+      border: 1px solid orangered;
+      width: 50px;
+    }
+    
+    .col4 {
+      height: 400px;
+      width: 300px;
+    }
+    
+    .col4 p {
+      color: gray;
+      margin-top: 14px;
+      margin-top: 15%;
+    }
+    .col4 span{
+      color: white;
+    }
+    .last-foot {
+      height: 70px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.815);
+      display: flex;
+    }
+    
+    .left-f {
+      width: 50%;
+      height: 70px;
+    }
+    
+    .left-f p {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      color: gray;
+    }
+    
+    .right-f {
+      width: 50%;
+      height: 70px;
+    }
+    
+    .foot {
+      color: white;
+    }
+    
+    .right-f i {
+      float: right;
+      padding-right: 30px;
+      padding-top: 30px;
+      font-size: larger;
+      color: gray;
+      transition: all 0.3s ease
+    }
+    
+    .right-f i:hover {
+      color: white;
+      font-size: x-large;
+    }
+    
+    
+    @media(max-width:1000px){
+      .main-col {
+       justify-content: space-evenly;
+        align-items: center;
+        padding-top: 7%;
+        height: auto;
+        background-color: rgba(19, 19, 20, 0.863);
+        padding-top: 7%;
+        color: white;
+        flex-wrap: wrap;
+        font-size: 18px;
+        flex-direction: column;
+        /* height: 450px; */
+      }
+      .last-foot {
+        height: auto;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.815);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+    @media(max-width:600px){
+      .col1,.col2,.col3,.col4{
+        /* height: 400px; */
+        width: auto;
+        flex-wrap: wrap;
+        padding-left: 15px;
+      padding-top: 19%;
+      }
+    }
+    /* footer... */

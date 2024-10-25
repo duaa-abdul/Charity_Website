@@ -1,0 +1,894 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #top {
+    height: auto;
+  }
+  #topBar {
+    width: 89%;
+    margin: auto;
+  }
+  
+  .call {
+    display: flex;
+    padding-top: 15px;
+  }
+  .icons {
+    display: flex;
+    float: right;
+  }
+  .fb {
+    padding: 10px;
+    font-size: larger;
+    border-left: 1px solid rgb(234 227 227);
+    width: 60px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* navbar... */
+  .menu_bar{
+    /* background-color: red; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .menu_bar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo p{
+    margin-top: 6%;
+  }
+  .menu_bar img{
+    height: 50px;
+    width: 120px;
+  }
+  .menu_bar ul{
+    list-style-type: none;
+    display: flex;
+    /* background-color: pink; */
+  }
+  .menu_bar ul li{
+    padding: 10px ;
+    position: relative;
+  }
+  .menu_bar ul li a{
+    color: black;
+    text-decoration: none;
+    /* font-size: 20px; */
+    text-transform: uppercase ;
+  }
+  .menu_bar ul li a:hover{
+    color: #fa6f1c;
+  }
+  .menu_bar ul button{
+    height: 50px;
+    width: 110px;
+    border: 2px solid orangered;
+    color: #fa6f1c;
+    text-transform: uppercase;
+  }
+  .menu_bar ul button:hover{
+    color: white;
+    background-color: #fa6f1c;
+  }
+  .dropdown_menu{
+    display: none;
+  }
+  .menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+  }
+  .dropdown_menu ul {
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+  }
+  .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+  }
+  .dropdown_menu ul li a{
+    color: white;
+  }
+  
+  /* navbar.. */
+  
+  /* hero.... */
+  .image {
+    background-image: url(../asset/main-causes.jpg);
+    height: 250px;
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .image h4 {
+    color: white;
+    padding-left: 5%;
+    padding-top: 4%;
+  }
+  
+  .image button {
+    height: 40px;
+    width: 190px;
+    border: none;
+    margin-left: 50px;
+  }
+  
+  .image button span {
+    color: orangered;
+  }
+  
+  .image span:hover {
+    text-decoration: underline;
+  }
+  
+  /* hero.... */
+  
+  /* content... */
+  .content {
+    height: 750px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 40px;
+    padding-top: 4%;
+  }
+  
+  .left-content {
+    height: 650px;
+    width: 60%;
+    background-color: rgba(233, 231, 231, 0.993);
+    margin-left: 5%;
+  }
+  
+  .left-content img {
+    width: 100%;
+  }
+  
+  .left-content h5 {
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  
+  .left-content h5 span {
+    height: 20px;
+    width: 60px;
+    background-color: black;
+    color: white;
+  }
+  
+  .left-content p {
+    color: gray;
+    padding-left: 2%;
+    display: inline-block;
+  }
+  .left-content .para {
+    float: right;
+    padding-right: 2%;
+  }
+  
+  /* Container for the progress bar */
+  .progress-container {
+    width: 80%;
+    background-color: black;
+    position: relative;
+    height: 8px;
+    margin: 20px 0;
+    padding-left: 5px;
+  }
+  
+  /* The progress bar itself */
+  .progress-bar {
+    width: 84%;
+    /* Set the percentage progress */
+    background-color: #ff3b3b;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Percentage label */
+  .percentage-label {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    background-color: #ff3b3b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 3px;
+  }
+  
+  .left-content button {
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+    height: 30px;
+    width: 130px;
+    margin-left: 2%;
+  }
+  
+  .left-content button:hover {
+    color: white;
+    background-color: orangered;
+  }
+  
+  .right-content {
+    height: 700px;
+    width: 30%;
+    /* background-color: pink; */
+  }
+  
+  .right-content h4 {
+    padding-left: 8%;
+    padding-top: 2%;
+  }
+  
+  .right-content ul li {
+    color: gray;
+    line-height: 22px;
+    font-weight: 400;
+    padding-top: 4%;
+    padding-left: 4%;
+  }
+  .right-content ul li span {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .right-content ul li:hover {
+    color: orangered;
+  }
+  
+  .right-content img {
+    height: 200px;
+    width: 100%;
+    padding-top: 5%;
+  }
+  
+  .right-content h5 {
+    padding-left: 3%;
+    padding-top: 4%;
+  }
+  
+  .right-content h5:hover {
+    color: orangered;
+  }
+  
+  .right-content p {
+    padding-left: 3%;
+    color: gray;
+  }
+  /* content... */
+  .content2 {
+    height: 650px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    gap: 22px;
+  }
+  .left-content2 {
+    height: 650px;
+    width: 60%;
+    background-color: rgba(233, 231, 231, 0.993);
+    margin-left: 5%;
+  }
+  
+  .left-content2 img {
+    width: 100%;
+  }
+  
+  .left-content2 h5 {
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  
+  .left-content2 h5 span {
+    height: 20px;
+    width: 60px;
+    background-color: black;
+    color: white;
+  }
+  
+  .left-content2 p {
+    color: gray;
+    padding-left: 2%;
+    display: inline-block;
+  }
+  .left-content2 .para {
+    float: right;
+    padding-right: 2%;
+  }
+  
+  /* Container for the progress bar */
+  .progress-container {
+    width: 80%;
+    background-color: black;
+    position: relative;
+    height: 8px;
+    margin: 20px 0;
+    padding-left: 5px;
+  }
+  
+  /* The progress bar itself */
+  .progress-bar {
+    width: 84%;
+    /* Set the percentage progress */
+    background-color: #ff3b3b;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Percentage label */
+  .percentage-label {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    background-color: #ff3b3b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 3px;
+  }
+  
+  .left-content2 button {
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+    height: 30px;
+    width: 130px;
+    margin-left: 2%;
+  }
+  
+  .left-content2 button:hover {
+    color: white;
+    background-color: orangered;
+  }
+  .right-content2 {
+    height: 600px;
+    width: 30%;
+    /* background-color: purple; */
+  }
+  .right-content2 img {
+    height: 200px;
+    width: 100%;
+  }
+  .right-content2 h5 {
+    padding-left: 2%;
+    padding-top: 4%;
+  }
+  .right-content2 p {
+    padding-left: 2%;
+    color: gray;
+  }
+  
+  /* content3.. */
+  .content3 {
+    height: 720px;
+    width: 100%;
+    display: flex;
+    padding-top: 4%;
+    gap: 22px;
+  }
+  
+  .left-content3 {
+    height: 650px;
+    width: 60%;
+    background-color: rgba(233, 231, 231, 0.993);
+    margin-left: 5%;
+  }
+  
+  .left-content3 img {
+    width: 100%;
+  }
+  
+  .left-content3 h5 {
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  
+  .left-content3 h5 span {
+    height: 20px;
+    width: 60px;
+    background-color: black;
+    color: white;
+  }
+  
+  .left-content3 p {
+    color: gray;
+    padding-left: 2%;
+    display: inline-block;
+  }
+  .left-content3 .para {
+    float: right;
+    padding-right: 2%;
+  }
+  
+  /* Container for the progress bar */
+  .progress-container {
+    width: 80%;
+    background-color: black;
+    position: relative;
+    height: 8px;
+    margin: 20px 0;
+    padding-left: 5px;
+  }
+  
+  /* The progress bar itself */
+  .progress-bar {
+    width: 84%;
+    /* Set the percentage progress */
+    background-color: #ff3b3b;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Percentage label */
+  .percentage-label {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    background-color: #ff3b3b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 3px;
+  }
+  
+  .left-content3 button {
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+    height: 30px;
+    width: 130px;
+    margin-left: 2%;
+  }
+  
+  .left-content3 button:hover {
+    color: white;
+    background-color: orangered;
+  }
+  .right-content3 {
+    height: 600px;
+    width: 30%;
+  }
+  .right-content3 h4 {
+    padding-top: 2%;
+    padding-left: 4%;
+  }
+  .right-content3 p {
+    padding-top: 5%;
+    padding-left: 2%;
+    color: gray;
+  }
+  /* content4.. */
+  .content4 {
+    height: 720px;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .left-content4 {
+    height: 600px;
+    width: 60%;
+    margin-left: 5%;
+    padding-top: 3%;
+  }
+  /* .left-content4 {
+      height: 650px;
+      width: 60%;
+      background-color: rgba(233, 231, 231, 0.993);
+      margin-left: 5%;
+  } */
+  
+  .left-content4 img {
+    width: 100%;
+  }
+  
+  .left-content4 h5 {
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  
+  .left-content4 h5 span {
+    height: 20px;
+    width: 60px;
+    background-color: black;
+    color: white;
+  }
+  
+  .left-content4 p {
+    color: gray;
+    padding-left: 2%;
+    display: inline-block;
+  }
+  .left-content4 .para {
+    float: right;
+    padding-right: 2%;
+  }
+  
+  /* Container for the progress bar */
+  .progress-container {
+    width: 80%;
+    background-color: black;
+    position: relative;
+    height: 8px;
+    margin: 20px 0;
+    padding-left: 5px;
+  }
+  
+  /* The progress bar itself */
+  .progress-bar {
+    width: 84%;
+    /* Set the percentage progress */
+    background-color: #ff3b3b;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Percentage label */
+  .percentage-label {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    background-color: #ff3b3b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 3px;
+  }
+  
+  .left-content4 button {
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+    height: 30px;
+    width: 130px;
+    margin-left: 2%;
+  }
+  
+  .left-content4 button:hover {
+    color: white;
+    background-color: orangered;
+  }
+  
+  @media (max-width: 800px) {
+    .content,
+    .content2,
+    .content3,
+    .content4 {
+      flex-direction: column;
+      height: auto;
+      width: auto;
+      flex-wrap: wrap;
+    }
+    .left-content,
+    .right-content,
+    .left-content2,
+    .right-content2,
+    .left-content3,
+    .right-content3,
+    .left-content4 {
+      width: auto;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    h5 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .right-content h5 {
+      width: auto;
+      height: auto;
+    }
+    .right-content img {
+      width: 100%;
+    }
+    .num {
+      margin-top: 3%;
+    }
+  }
+  
+  .num {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .num a {
+    color: black;
+    height: 60px;
+    width: 50px;
+    margin-left: 2%;
+    padding-top: 7px;
+  }
+  .num .one {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .num .two {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .num .three {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .num .four {
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .num .five {
+    height: 50px;
+    width: 50px;
+    background: white;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+  .num a:hover {
+    color: white;
+    background-color: orangered;
+    border: none;
+  }
+  
+  /* black.. */
+  .black-cont {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left-cont {
+    height: 250px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .right-cont {
+    background: black;
+    height: 250px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .right-cont button {
+    color: orangered;
+    border: 2px solid orangered;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 12px;
+  }
+  
+  .right-cont button:hover {
+    color: white;
+    background-color: orangered;
+  }
+  
+  .round {
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(49, 48, 48);
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    padding-top: 6px;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .black-cont {
+      height: auto;
+      /* Make container height flexible */
+      flex-direction: column;
+      /* Stack left and right content vertically */
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    .left-cont,
+    .right-cont {
+      width: 100%;
+      /* Full width on smaller screens */
+      height: auto;
+      /* Adjust height to fit content */
+    }
+  
+    .right-cont {
+      flex-direction: column;
+      /* Stack buttons vertically */
+    }
+  
+    .right-cont button {
+      width: 80%;
+      /* Reduce button width for better fit */
+      font-size: 16px;
+      /* Slightly smaller font size */
+    }
+  
+    .round {
+      margin: 10px 0;
+      /* Add margin between the buttons and "OR" */
+    }
+  }
+  
+  /* black.. */
+  
+  footer {
+    height: 400px;
+    width: 100%;
+    /* background-color: rgb(201, 117 */
+  }
+  
+  .main-col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    background-color: rgba(19, 19, 20, 0.863);
+    padding-top: 12%;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .col1 {
+    height: 400px;
+    width: 400px;
+    padding-left: 15px;
+  }
+  
+  .main-col h3 {
+    position: relative;
+  }
+  .main-col h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: orangered;
+    height: 2px;
+    width: 50px;
+  }
+  
+  .col1 p {
+    color: gray;
+    padding-top: 20px;
+  }
+  
+  .col2 {
+    height: 400px;
+    width: 300px;
+    line-height: 40px;
+  }
+  
+  .col2 li {
+    list-style: none;
+    color: gray;
+    margin-top: 10px;
+  }
+  
+  .col2 li:hover {
+    color: white;
+  }
+  
+  .col3 {
+    height: 400px;
+    width: 300px;
+  }
+  
+  .col3 p {
+    color: gray;
+    padding-top: 20px;
+  }
+  
+  .col3 input {
+    margin-top: 18px;
+    width: 190px;
+  }
+  
+  .col3 button {
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+    width: 50px;
+  }
+  
+  .col4 {
+    height: 400px;
+    width: 300px;
+  }
+  
+  .col4 p {
+    color: gray;
+    margin-top: 14px;
+  }
+  
+  .last-foot {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+  }
+  
+  .left-f {
+    width: 50%;
+    height: 70px;
+  }
+  
+  .left-f p {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: gray;
+  }
+  
+  .right-f {
+    width: 50%;
+    height: 70px;
+  }
+  
+  .foot {
+    color: white;
+  }
+  
+  .right-f i {
+    float: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: larger;
+    color: gray;
+    transition: all 0.3s ease;
+  }
+  
+  .right-f i:hover {
+    color: white;
+    font-size: x-large;
+  }
+  
+  /* footer... */
